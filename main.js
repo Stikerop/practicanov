@@ -148,5 +148,10 @@ function showResults() {
 
     headerContainer.innerHTML = finalMessage;
 
+    // Меняем кнопку на ИГРАТЬ СНОВА
+    submitBtn.blur();
+    submitBtn.innerText = 'Начать заново';
+    submitBtn.onclick = () => history.go();
+
 }
 
